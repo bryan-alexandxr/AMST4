@@ -61,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
             Log.d("Mensaje", "ingreso");
         }
         else if(v.getId()==R.id.btnregistrarse){
-
         }
     }
 
@@ -79,5 +78,4 @@ public class MainActivity extends AppCompatActivity {
     public void grafico(View v){
         Intent intent = new Intent(this, Grafico.class);startActivity(intent);
     }
-
 }
