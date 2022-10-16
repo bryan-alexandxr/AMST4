@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ASMT4</string>
     <string name="title_activity_maps">Maps</string>
+    <string name="title_activity_mapa">Mapa</string>
 </resources>

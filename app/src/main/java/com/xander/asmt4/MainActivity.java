@@ -3,7 +3,6 @@ import static com.xander.asmt4.R.id.btnlogin;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
@@ -11,6 +10,8 @@ import
         android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
@@ -43,8 +44,6 @@ public class MainActivity extends AppCompatActivity {
         calendario.setOnClickListener(this::calendario);
         maps.setOnClickListener(this::maps);
         grafico.setOnClickListener(this::grafico);
-
-
     }
 
     public void registrarse(View view) {
@@ -73,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Calendario.class);startActivity(intent);
     }
     public void maps(View v){
-        Intent intent = new Intent(this, Maps.class);startActivity(intent);
+        Intent intent = new Intent(this, Mapa.class);startActivity(intent);
     }
     public void grafico(View v){
         Intent intent = new Intent(this, Grafico.class);startActivity(intent);
