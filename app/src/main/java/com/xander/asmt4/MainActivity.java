@@ -12,9 +12,16 @@ import
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.getbase.floatingactionbutton.FloatingActionButton;
+import com.getbase.floatingactionbutton.FloatingActionsMenu;
+
 public class MainActivity extends AppCompatActivity {
     private EditText txtNombre, txtApellido, txtUsuario, txtPassword;
     private Button btnLogin, btnRegistro;
+
+
+    FloatingActionsMenu grupodebotones;
+    FloatingActionButton youtube, calendario, maps, grafico;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +32,19 @@ public class MainActivity extends AppCompatActivity {
 
         btnLogin = (Button) findViewById(btnlogin);
         btnRegistro = (Button) findViewById(R.id.btnregistrarse);
+
+        grupodebotones = findViewById(R.id.grupoFlotante);
+        youtube = findViewById(R.id.videoview);
+        calendario = findViewById(R.id.calendarview);
+        maps = findViewById(R.id.mapsview);
+        grafico = findViewById(R.id.linealview);
+
+        youtube.setOnClickListener(this::youtube);
+        calendario.setOnClickListener(this::calendario);
+        maps.setOnClickListener(this::maps);
+        grafico.setOnClickListener(this::grafico);
+
+
     }
 
     public void registrarse(View view) {
@@ -44,4 +64,20 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+
+    //Desafio
+
+    public void youtube(View v){
+        Intent intent = new Intent(this, Youtube.class);startActivity(intent);
+    }
+    public void calendario(View v){
+        Intent intent = new Intent(this, Calendario.class);startActivity(intent);
+    }
+    public void maps(View v){
+        Intent intent = new Intent(this, Maps.class);startActivity(intent);
+    }
+    public void grafico(View v){
+        Intent intent = new Intent(this, Grafico.class);startActivity(intent);
+    }
+
 }
