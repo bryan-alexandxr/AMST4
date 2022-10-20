@@ -1,18 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#D8AF73"
+        android:orientation="vertical"
+        android:padding="20dip"
+        tools:ignore="MissingConstraints">
 
+        <EditText
+            android:id="@+id/txtUsuario"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/usuario"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/txtPasswd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:layout_marginBottom="30dip"
+            android:hint="@string/clave"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="login"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="@string/login" />
+
+        <Button
+            android:id="@+id/btnRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="registrarse"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="@string/registrarse" />
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
