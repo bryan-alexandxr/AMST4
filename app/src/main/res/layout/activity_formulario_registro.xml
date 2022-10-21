@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".formulario_registro">
+
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical" android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D8AF73"
+        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/txtNombre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nombres:"/>
+
             <EditText
                 android:id="@+id/editNombre"
                 android:layout_width="match_parent"
@@ -27,6 +32,7 @@
                 android:inputType="textPersonName"
                 android:text=""/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,6 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Apellidos:"/>
+
             <EditText
                 android:id="@+id/editApellido"
                 android:layout_width="wrap_content"
@@ -44,15 +51,18 @@
                 android:inputType="textPersonName"
                 android:text=""/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/txtCedula"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Cedula:"/>
+
             <EditText
                 android:id="@+id/editCedula"
                 android:layout_width="wrap_content"
@@ -60,10 +70,12 @@
                 android:ems="10" android:inputType="number"
                 android:text=""/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/txtEdad"
                 android:layout_width="wrap_content"
@@ -73,9 +85,11 @@
                 android:id="@+id/editEdad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="10" android:inputType="number"
-                android:text=""/>
+                android:ems="10"
+                android:inputType="number"
+                android:text="" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -85,6 +99,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Altura:"/>
+
             <EditText
                 android:id="@+id/editAltura"
                 android:layout_width="wrap_content"
@@ -93,6 +108,7 @@
                 android:inputType="numberDecimal"
                 android:text=""/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -102,6 +118,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Peso:"/>
+
             <EditText
                 android:id="@+id/editPeso"
                 android:layout_width="wrap_content"
@@ -110,15 +127,18 @@
                 android:inputType="numberDecimal"
                 android:text=""/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/txtEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Email:"/>
+
             <EditText
                 android:id="@+id/editEmail"
                 android:layout_width="wrap_content"
@@ -127,6 +147,7 @@
                 android:inputType="textEmailAddress"
                 android:text=""/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -136,6 +157,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Usuario:"/>
+
             <EditText
                 android:id="@+id/editUsuario"
                 android:layout_width="wrap_content"
@@ -143,6 +165,7 @@
                 android:ems="10"
                 android:text=""/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -151,7 +174,8 @@
                 android:id="@+id/txtClave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Clave:"/>
+                android:text="Clave:" />
+
             <EditText
                 android:id="@+id/editClave"
                 android:layout_width="wrap_content"
@@ -165,7 +189,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Grabar"
-            android:onClick="insertarpaciente"/>
+            android:onClick="insertarpaciente"
+            android:text="Grabar" />
+
     </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

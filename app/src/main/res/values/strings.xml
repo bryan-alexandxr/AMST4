@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ASMT4</string>
+    <string name="usuario">Usuario</string>
+    <string name="clave">Clave</string>
+    <string name="login">LOGIN</string>
+    <string name="registrarse">REGISTRARSE</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>
