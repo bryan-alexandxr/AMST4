@@ -1,10 +1,12 @@
 package com.xander.asmt4;
 
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.widget.CalendarView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Calendario extends AppCompatActivity {
     CalendarView calendario;
