@@ -8,9 +8,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+
 public class MainActivity extends AppCompatActivity {
-    private EditText txtNombre, txtApellido, txtUsuario, txtPasswd; private Button
-            btnLogin, btnRegistro;
+
+    private EditText txtNombre, txtApellido, txtUsuario, txtPasswd;
+    private Button btnLogin, btnRegistro;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
